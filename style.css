@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    background-color: black;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.menu2 {
+    display: none;
+}
+
+nav div:hover .menu2{
+   display: flex;
+   flex-direction: column;
+}
+
+.menu3 {
+    display: none;
+}
+
+.product2:hover.menu3 {
+    display: block;
+}
