@@ -65,10 +65,12 @@ nav div:hover .menu2{
     position: relative;
 }
 
-.products:hover {
+.link:hover, .products:hover {
     background-color: aquamarine;
+    color: black;
 }
 
-.product2 .sub-menu:hover {
+.sub-menu:hover {
     background-color: rgb(160, 255, 223);
 }
+
