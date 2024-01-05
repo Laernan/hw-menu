@@ -1,28 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: flex-start;
     gap: 25px;
     background-color: black;
+    height: 100px;
 }
 
 .link {
     color: white;
     text-decoration: none;
+    padding: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .menu2 {
     display: none;
+    position: relative;
 }
 
 nav div:hover .menu2{
    display: flex;
    flex-direction: column;
+   position: absolute;
+   top: 100%;
 }
 
 .menu3 {
     display: none;
 }
 
-.product2:hover.menu3 {
-    display: block;
+.product2:hover .menu3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+}
+
+.sub-menu {
+    color: black;
+    background-color: aquamarine;
+    text-decoration: none;
+    width: 200px;
+    padding: 30px 50px;
+    display: flex;
+    border: 2px solid gray;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 8px 8px 15px 0px black;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.products:hover {
+    background-color: aquamarine;
+}
+
+.product2 .sub-menu:hover {
+    background-color: rgb(160, 255, 223);
 }
